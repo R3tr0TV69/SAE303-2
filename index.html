@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <!-- librairie gsap CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- librairie snap.svg CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+    <!-- fichiers js et css-->
+    <script src="./js/scripts.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="header">
+    <img src="./img/logo_cnn.png" alt="logo CNN" id="logo"> 
+    </div>
+    <div class="titre">
+        Electric Vehicles in Rhône: A Roadblock to 2035 Targets?
+    </div>
+    <div class="article">
+        <p>
+            With the European Union's decision to ban the sale of new combustion vehicles by 2035 comes the ambition to have 42% of the car fleet made up of electric vehicles by the same year. We decided to investigate this highly ambitious choice taking place on the other side of the Atlantic.
+            To conduct our investigation, we focused on France, particularly the Rhône department (69). This is because Lyon, the capital of Rhône, is a haven for American expatriates. Indeed, when they seek to learn French and discover France, Paris is too expensive. They look for a dynamic city with employment opportunities and, generally, they end up in Lyon.
+            <br><br>
+            For this study, we relied on data from OpenDataUniversity.
+            Out of the 1,746,885 cars in circulation in the department, 1,689,546 are combustion vehicles. A simple subtraction shows just how much electric vehicles are a minority in this area: 57,339 vehicles, or about 3.39% of the car fleet.
+            With an average of 206 vehicles per town, electric cars are well distributed across the various municipalities of Rhône. However, we notice that there are some "clusters" of electric cars in cities like Lyon, Villeurbanne, Limonest, Saint-Priest, Vénissieux, and Caluire-et-Cuire. Indeed, each of these cities has more than 1,000 electric cars in circulation.
+            <br><br>
+            On the other hand, to meet the growing demand for electric cars in France, it makes sense to ensure a good distribution of charging infrastructure. But is the department succeeding in this function?
+            Let’s look.
+            <br><br>
+            In 2024, there are 319 charging stations in Rhône, with an average of 4 stations per town. Thus, an average of 4 stations for 206 vehicles per town seems quite insufficient. However, we need to consider other factors.
+            First, the charging stations are not suitable for all vehicles depending on the available adapter. Like with mobile phones, not all chargers are compatible since there are USB, Lightning, USB-C, and microUSB ports.
+            Second, several stations are only available to a minority of people. Those in private residential parking lots, hotels, supermarkets, or certain restaurants require proof of hosting to activate the power distribution.
+            These specific cases reduce the number of publicly accessible stations to 295.
+            <br><br>
+            However, a low number of stations may suffice if the power distributed by these stations allows for rapid charging and avoids congestion at charging zones.
+            The average power of the stations in the 69 area is 114 kWh, which is quite good. Charging stations are classified as "ultra-fast" when their power exceeds 150 kWh, allowing most vehicles to be charged in 30 minutes. There are 30 such stations in the department, concentrated in the largest towns like Lyon, Bron, Saint-Bonnet-De-Mure, and Villefranche-Sur-Saône. Some towns, like Caluire-et-Cuire, simply do not have ultra-fast charging stations.
+        </p>
+    </div>
+
+    <svg id="svg" width="400" height="400"></svg>
+    <button id="btnCars">Cacher les voitures</button>
+    <button id="btnZoom">Zoom+</button>
+    <button id="btnZoomBase">Zoom-</button>
+
+    <div class="article">
+        <p>
+            As seen in the chart above, when we focus on the pure numerical distribution of charging stations relative to the number of cars in circulation in each town, we realize that this distribution is not optimal. Large cities like Lyon, with a high density of electric cars, lack sufficient stations, while other towns like Vénissieux, with a lower proportion of electric cars, are well-equipped. This poses a problem from a traffic standpoint, as it forces users to take detours to reach charging stations, which, during peak times, can lead to traffic jams and, consequently, an increased risk of accidents—not to mention the longer wait times at these stations.
+            Another important factor in ensuring a logical distribution of charging stations to the population is the cost per kWh of electricity. Indeed, this cost is subject to significant variation depending on the location of the station, the station’s power, and the electricity provider. In the Rhône department, IZIVIA, part of the EDF group, holds a clear oligopolistic position with 146 charging stations.
+            <br><br>
+            At an average price of €0.45/kWh, which tends to rise over the years, charging an electric vehicle is becoming increasingly expensive, and this argument against the cost of refueling a combustion vehicle is becoming less valid. Given that the average price of electricity at home is around €0.25, users sometimes find themselves having to pay twice as much for charging to avoid overloading their home’s electrical capacity because of their car.
+            Free charging stations are not an option either, as there is only one in the entire department, located in Limonest.
+            <br><br>
+            We can thus deduce that the distribution of charging infrastructure in Rhône is partly related to the logic of population distribution and traffic patterns. However, in terms of its ability to meet the growing needs of users in the department to achieve the European targets for 2030, this aspect seems compromised. The European Union’s ambitions appear quite unattainable given the previously reached development speed. Other factors, such as the cost differences between home charging and public stations, as well as the limited accessibility of certain stations, exacerbate the problem.
+            <br>
+            To better address this issue, a more rational redistribution of stations, considering the density of electric vehicles and traffic, as well as a revision of costs and the environmental objectives of French and European administrations, would be necessary.
+
+        </p>
+    </div>
+</body>
+</html>

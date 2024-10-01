@@ -1,0 +1,53 @@
+/* Conteneur général pour centrer le contenu de la page */
+body {
+    margin: 0 auto;
+    max-width: 1200px; /* Définit une largeur maximale pour le contenu */
+    padding: 0 20px;   /* Ajoute des marges internes pour espacer les côtés */;
+}
+
+/* Style de l'en-tête */
+.header {
+    background-color: black; 
+    padding: 10px; 
+    height: 100px; 
+    position: relative; 
+}
+
+/* Centrer l'image dans l'en-tête */
+.header img {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    width: 100px;
+}
+
+/* Style pour les articles */
+.article {
+    padding: 10px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(70, 70, 70);
+}
+
+/* Centrer le titre */
+.titre {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    opacity: 0;
+}
+
+/* Pour centrer le graphique SVG */
+svg {
+    display: block;       /* Pour rendre l'élément SVG centré en mode block */
+    margin: 0 auto;       /* Centrer horizontalement */
+    width: 80%;           /* Rendre le SVG plus grand, ajustable */
+    max-width: 800px;     /* Définir une taille maximale */
+    height: auto;         /* Garder les proportions du SVG */
+}
